@@ -9,7 +9,7 @@ def library_init
   knuth     = Reader.new('Donald Knuth',      'knuth@gmail.com',          'Pasadena CA',      '44 Ave',       '147')
   carmack   = Reader.new('John Carmack',      'johnc@idsoftware.com',     'Mountain View CA', 'Nilda Ave',    '74')
 
-  leo_tolstoy = Author.new('Leo Tolstoy' )
+  leo_tolstoy = Author.new('Leo Tolstoy')
   oscar_wilde = Author.new('Oscar Wilde')
   stendhal    = Author.new('Stendhal')
   devid_black = Author.new('David A. Black')
@@ -22,16 +22,17 @@ def library_init
 
   library = Library.new(
     [war_and_peace, red_and_black, rubyist, grey, war_and_peace],
-    [ Order.new(war_and_peace,  teslenko, Time.now + (rand(30)-30).days),
-      Order.new(war_and_peace,  obama,    Time.now + (rand(30)-30).days),
-      Order.new(war_and_peace,  pupkin,   Time.now + (rand(30)-30).days),
-      Order.new(red_and_black,  teslenko, Time.now + (rand(30)-30).days),
-      Order.new(war_and_peace,  matz,     Time.now + (rand(30)-30).days),
-      Order.new(rubyist,        teslenko, Time.now + (rand(30)-30).days),
-      Order.new(rubyist,        knuth,    Time.now + (rand(30)-30).days),
-      Order.new(rubyist,        pupkin,   Time.now + (rand(30)-30).days),
-      Order.new(rubyist,        matz,     Time.now + (rand(30)-30).days),
-      Order.new(rubyist,        carmack,  Time.now + (rand(30)-30).days)],
+    [ Order.new(war_and_peace,  teslenko, Time.now + (rand(30) - 30).days),
+      Order.new(war_and_peace,  obama,    Time.now + (rand(30) - 30).days),
+      Order.new(war_and_peace,  pupkin,   Time.now + (rand(30) - 30).days),
+      Order.new(red_and_black,  teslenko, Time.now + (rand(30) - 30).days),
+      Order.new(war_and_peace,  matz,     Time.now + (rand(30) - 30).days),
+      Order.new(karenina,       matz,     Time.now + (rand(30) - 30).days),
+      Order.new(rubyist,        teslenko, Time.now + (rand(30) - 30).days),
+      Order.new(rubyist,        knuth,    Time.now + (rand(30) - 30).days),
+      Order.new(rubyist,        pupkin,   Time.now + (rand(30) - 30).days),
+      Order.new(rubyist,        matz,     Time.now + (rand(30) - 30).days),
+      Order.new(rubyist,        carmack,  Time.now + (rand(30) - 30).days)],
       [teslenko, pupkin,        obama, matz, knuth, carmack],
       [leo_tolstoy, oscar_wilde, stendhal, devid_black]
     )

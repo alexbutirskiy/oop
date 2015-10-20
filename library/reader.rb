@@ -9,4 +9,3 @@ class Reader
     "#{name}"
   end
 end
-

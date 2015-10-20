@@ -6,6 +6,6 @@ class Order
   end
 
   def to_s
-    "#{book.title} was given to #{reader.to_s} on #{date}"
+    "#{book.title} was given to #{reader} on #{date}"
   end
 end
