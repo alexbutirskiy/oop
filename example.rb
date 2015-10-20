@@ -26,8 +26,8 @@ puts "\n1. Get all Library data from file(s)"
 
 # Perform some random maipulations
 # Give random book to random reader
-  book = library.books[ rand library.books.size ]
-  reader = library.readers[ rand library.readers.size ]
+  book = library.books.sample
+  reader = library.readers.sample
   library.orders << Order.new(book, reader, (Time.now + (rand(30)-30).days))
 
 puts "\n2. Who often takes the book?"
